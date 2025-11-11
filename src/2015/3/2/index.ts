@@ -35,10 +35,10 @@ export default async function runner(inputPath: string) {
         default: break;
       }
       if(!map[x]) map[x] = [];
-      if(map[x][y]) {
+      if(map[x]![y]) {
         continue;
       }
-      map[x][y] = true;
+      map[x]![y] = true;
       
       houses++;
     } else {
@@ -58,10 +58,10 @@ export default async function runner(inputPath: string) {
         default: break;
       }
       if(!map[roboX]) map[roboX] = [];
-      if(map[roboX][roboY]) {
+      if(map[roboX]![roboY]) {
         continue;
       }
-      map[roboX][roboY] = true;
+      map[roboX]![roboY] = true;
       
       houses++;
     }

@@ -28,8 +28,8 @@ export default async function runner(inputPath: string) {
           break;
       }
       if(!map[x]) map[x] = [];
-      if(map[x][y]) continue;
-      map[x][y] = true;
+      if(map[x]![y]) continue;
+      map[x]![y] = true;
       
       houses++;
     
